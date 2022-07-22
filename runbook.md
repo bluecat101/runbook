@@ -20,11 +20,11 @@ a+x=権限(authority)を全員に付与
 
 3. PATHを通す
 
-each $PAThに書いてあるファイルならどこでもOK
+echo $PAThに書いてあるファイルならどこでもOK
 
 ~/profile
 ```sh
-export PATH=$HOME/command:$PATH
+export PATH=$HOME/self_command:$PATH
 ```
 
 ターミナルを再起動して終了
