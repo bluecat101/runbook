@@ -7,7 +7,9 @@
 
 ~/self_command/exe_c
 ``` sh
-#!/bin/sh
+#
+
+!/bin/sh
 gcc $1
 ./a.out $2 $3
 ```
@@ -28,3 +30,19 @@ export PATH=$HOME/self_command:$PATH
 ```
 
 ターミナルを再起動して終了
+
+# aliasを用いて自作コマンド
+参考::https://eng-entrance.com/linux-command-alias#alias-4
+1. aliasに登録する
+```sh
+alias name='command' #alias 登録名='コマンド;コマンド;...;コマンド'
+```
+2. 永久化する
+<.bashrc>
+```sh
+alias name ='command'
+```
+3. resorceする
+```sh
+source ~/.bashrc
+```
